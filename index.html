@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./public/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/599a3a7868.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .link:hover .cursor {
+      transform: translate(-50%, -50%) scale(8);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="cursor-box"> -->
+  <div class="cursor"></div>
+  <!-- </div> -->
+
+  <header id="header" role="banner">
+    <div class="header__inner">
+      <nav class="header__nav" role="navigation" aria-label="메인메뉴">
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#introduce">contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__nav_mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="flase"
+        role="button">
+        <span></span>
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#introduce">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="main" role="main">
+    <!-- -------intro--------- -->
+    <section id="intro">
+      <!-- <figure>
+          <video src="./src/assets/217392.mp4" autoplay loop muted></video>
+        </figure> -->
+      <!-- <div class="circle"></div> -->
+      <div class="inner">
+        <div>
+          <p>I want to be a</p>
+          <div class="title-wrap">
+            <div class="title ">
+              <p class="introtext">Creative</p>
+              <p class="introtext">Challenge</p>
+              <p class="introtext">Developer</p>
+              <p class="introtext">Adventurer</p>
+            </div>
+          </div>
+        </div>
+        <article id="mouse_area">
+          <div class="text-svg">
+            <svg class="svg-title" id="svgTitle" viewBox="0 0 770 116" preserveAspectRatio="xMidYMid meet">
+              <!-- width 값과 viewBox[2] 값을 통일 : 기본 크기 770 116 -->
+              <clipPath class="svg-circle" id="svgCircle">
+                <circle r="100" cx="200" cy="200"></circle>
+              </clipPath>
+
+              <path class="svg-logo" id="svgLogo"
+                d="M0,113.8V0.2h40.4c7.6,0,13.3,1.7,17.2,5.1c3.9,3.4,5.9,8.1,5.9,14.1V39c0,5.1-0.6,9.9-1.9,14.3  c-1.3,4.4-3.6,8-6.9,10.7s-8.1,4-14.4,4H23.3v45.8L0,113.8L0,113.8z M23.3,55.7h8.6c3.1,0,5.4-1.5,6.9-4.4c1.5-3,2.3-7.8,2.3-14.6  V29c0-6-0.6-10.3-1.9-12.9s-3.1-3.9-5.6-3.9H23.3V55.7z M125.9,116.1c-4.6,0-8.8-0.3-12.7-1c-3.8-0.6-7.2-2-10-4  c-2.8-2-5-5.1-6.5-9.1s-2.3-9.5-2.3-16.4V0.2h22.3v91.7c0,2.7,0.4,4.8,1.3,6.4c0.8,1.6,1.9,2.7,3.4,3.2s2.9,0.8,4.6,0.8  c1.5,0,3-0.3,4.4-0.8c1.4-0.5,2.5-1.6,3.4-3.2s1.3-3.8,1.3-6.4V0.2h22.3v85.4c0,6.8-0.8,12.2-2.3,16.3s-3.7,7.2-6.4,9.2  c-2.8,2-6.1,3.4-10,4C134.6,115.8,130.4,116.1,125.9,116.1z M192.3,113.8V0.2h40.4c7.2,0,12.7,1.7,16.4,5.1s5.7,8.1,5.7,14.1v12.9  c0,3.3-0.5,6.4-1.4,9.1c-1,2.8-2.4,5.1-4.3,7c-1.4,1.4-3.2,2.5-5.4,3.3c-2.2,0.8-4.3,1.2-6.4,1.4v0.2c2.2,0,4.3,0.3,6.4,0.8  c2.1,0.5,4,1.5,5.8,3.1c2.2,1.7,3.9,3.9,5.2,6.8c1.3,2.9,1.9,6.4,1.9,10.7v15.6c0,6.1-1.1,11-3.2,14.4s-5.1,5.9-9,7.2  c-3.9,1.4-8.6,2-13.9,2H192.3z M214.8,48.6h9c2.9,0,5.3-1,7-3.1c1.7-2,2.6-5.6,2.6-10.8V23.4c0-4-0.7-6.8-2.2-8.6  c-1.5-1.7-3.4-2.6-5.7-2.6h-10.8L214.8,48.6L214.8,48.6z M214.8,102.1h10.4c1.9,0,3.5-0.4,4.7-1.1c1.2-0.7,2.2-2,2.9-3.9  c0.7-1.9,1.1-4.7,1.1-8.5V75.2c0-5.1-0.9-8.5-2.6-10.1c-1.7-1.6-4-2.4-6.8-2.4h-9.6L214.8,102.1L214.8,102.1z M289.6,113.8V0.2h22.1  v98.3h25.8v15.4L289.6,113.8L289.6,113.8z M366.3,113.8V0.2h22.3v113.6L366.3,113.8L366.3,113.8z M452.8,115.2  c-6.8,0-12.6-1-17.4-2.9s-8.5-5.3-11.1-10.2s-3.9-11.7-3.9-20.6v-6.7c4,0,7.9,0,11.7,0s7.7,0,11.5,0v8.6c0,4.7,0.4,8.4,1.1,10.9  s1.9,4.2,3.3,5.2s3.1,1.4,5,1.4c3,0,5.3-1.1,7-3.2c1.7-2.1,2.6-6.3,2.6-12.4c0-4.7-0.7-8.3-2.2-10.7c-1.5-2.4-3.8-4.3-7-5.8  c-3.2-1.5-7.3-3.3-12.3-5.5c-4.5-1.9-8.2-4.2-11.1-6.9c-3-2.7-5.1-6.1-6.5-10.2s-2.1-9.1-2.1-15c0-7.4,1-13.5,3-18.1  c2-4.6,5.3-8,10-10.1c4.7-2.1,11-3.2,18.9-3.2c10.3,0,18.1,2.2,23.5,6.6c5.5,4.4,8.2,11.1,8.2,19.9v13.6c-3.7,0-7.4,0-11.1,0  s-7.4,0-11.3,0v-6.9c0-5.8-0.7-9.8-2-12.1c-1.4-2.3-3.8-3.5-7.2-3.5c-3.3,0-5.7,1-7.1,3.1c-1.4,2-2.1,5.4-2.1,10  c0,4.2,0.9,7.5,2.6,9.9s3.9,4.2,6.6,5.4c2.7,1.2,5.6,2.4,8.6,3.6c5.6,2.2,10.3,4.4,13.8,6.6s6.2,5.3,7.9,9.2s2.5,9.5,2.5,16.8  c0,8.2-1.4,14.7-4.1,19.5c-2.8,4.8-6.7,8.2-11.7,10.3C465.5,114.1,459.6,115.2,452.8,115.2z M518.4,113.8V0.2h22.3v46.5h18.7V0.2  h22.3v113.6h-22.3V63.2h-18.7v50.6L518.4,113.8L518.4,113.8z M617,113.8V0.2h52.3v15.8h-29v30.4h24.6v17.5h-24.6v34.6h29v15.4  L617,113.8L617,113.8z M700.5,113.8V0.2H742c7.6,0,13.3,1.7,17.1,5.1c3.8,3.4,5.8,8.1,5.8,14.1v17.7c0,6-1.6,11.1-4.8,15.2  s-8.2,6.5-15,7.1c4.4,0.6,7.5,2.1,9.3,4.3c1.9,2.2,3.5,5.9,4.9,10.9l10.8,39.2h-24.8L737,76.1c-0.8-3.1-1.6-5.7-2.6-7.8  c-1-2.1-2.3-3.2-4.1-3.2h-6.5v48.6L700.5,113.8L700.5,113.8z M723.7,49.6h9.2c3.6,0,6.2-1,7.7-3c1.5-2,2.3-5.2,2.3-9.5V23.4  c0-4.1-0.7-7-2.1-8.6s-3.6-2.5-6.5-2.5h-10.6L723.7,49.6L723.7,49.6z"
+                stroke-width="1"></path>
+              <use class="svg-text" id="svgText" xlink:href="#svgLogo"></use>
+              <use class="svg-circle" clip-path="url('#svgCircle')" xlink:href="#svgLogo"></use>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- -------project--------- -->
+    <section id="project" data-bg="#000000">
+      <div class="inner">
+        <div class="project-title flex">
+          <div class="project-mn">
+            <h1 class="text">PROJECT</h1>
+            <div class="mn link">
+              <p class="project-mainmenu"><span>View my works</span> <i class="fa-solid fa-chevron-down"></i></p>
+              <!-- <div class="cursor-box">
+                <div class="cursor"></div> -->
+              <ul class="project-submenu">
+                <li><a href="#" class="link">SYMBOL DESIGN</a></li>
+                <li><a href="#" class="link">WEB RENEWAL</a></li>
+                <li><a href="#" class="link">APP PROJECT</a></li>
+                <li><a href="#" class="link">PORTFOLIO WEBSITE</a></li>
+              </ul>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="txt">
+            <p>지금까지의 여정에서 HTML, CSS, JavaScript 같은 기본기를 탄탄히 다지고,
+              이를 실제 프로젝트에 적용하며 성장해왔습니다.
+              시맨틱 태그를 활용한 <span>구조화</span>부터 <span>웹 접근성과 반응형 디자인</span>,
+              그리고 인터랙티브한 <span>사용자 경험</span>을 위한
+              JS와 jQuery까지, 다양한 기술을 배우고 실무에 녹여냈습니다.</p>
+          </div>
+        </div>
+        <div class="project-slide">
+          <div class="project-inner">
+            <div class="slide-area">
+              <div class="project_slide_l swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide slide01 link" id="symbol">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.06</b>
+                      <span>SYMBOL DESIGN</span>
+                      <p>나를 표현한 나만의 심볼 디자인</p>
+                      <div class="flex">
+                        <em><a href="#" class="link">PROESS</a></em>
+                        <em><a href="#" class="link">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide02 link" id="web">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.07</b>
+                      <span>WEB RENEWAL</span>
+                      <p class="h2">포인핸드 웹사이트 리뉴얼</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide03 link" id="app">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.11</b>
+                      <span>APP PROJECT</span>
+                      <p class="h2">더 나은 여행 경험을 제공하는<br> 모바일 어플리케이션</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide04 link" id="portfolio">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.11.24~ING</b>
+                      <span>PORTFOLIO</span>
+                      <p class="h2">나의 이야기를 담아,<br> 웹을 통해 세상과 연결됩니다.</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="slide_arrow">
+                  <p class="arrow prev"><span class="material-symbols-outlined link">arrow_right_alt</span></p>
+                  <p class="arrow next"><span class="material-symbols-outlined link">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="project_slide_r swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide slide02">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide03">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide04">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide01">
+                    <p class="img"></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------work--------- -->
+    <section id="work" data-bg="#000000">
+      <div class="banner">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">I will show you infinite possibilities. </li>
+              <li class="splide__slide" style="font-size: 1.4rem;">무한한 가능성을 보여드리겠습니다.💫</li>
+              <li class="splide__slide">I will show you infinite possibilities. </li>
+              <li class="splide__slide" style="font-size: 1.4rem;">무한한 가능성을 보여드리겠습니다.💫</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="inner flex">
+        <div class="inner-box">
+          <div class="work-desc">
+            <p class="work-title"><span>WORK</span>
+              <span>ARCHIVE</span>
+            </p>
+            <ul class="desc-index">
+              <li><a href="#">
+                  <p class="br">젠틀몬스터의 선글라스 제품을 소개하는 페이지로<br> cube를 활용한 레이아웃입니다.</p>
+                  <div class="summary">
+                    <b>jquery / Cube / Swiper</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>skew를 활용해 메뉴를 만들고<br> 리디자인한 사이트입니다.</p>
+                  <div class="summary">
+                    <b>transform</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>마리오 게임의 특징을 살리며
+                    만든 사이트입니다.
+                  </p>
+                  <div class="summary">
+                    <b>jquery / 반응형</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>아코디언페이지 구성으로 재해석한 사이트입니다. </p>
+                  <div class="summary">
+                    <b>js / accordion / Swiper</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>swiper, jquery, vanilla script로<br> 클론코딩 하였습니다.</p>
+                  <div class="summary">
+                    <b>js / Clone / Swiper / 반응형</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <p>yes24 홈페이지를 클론코딩 하였습니다.</p>
+                  <div class="summary">
+                    <b>js / Clone</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>롯데칠성음료 홈페이지의 일부를 클론 코딩하였습니다. 음료를 클릭하면 그에 대한 정보들이 나옵니다.</p>
+                  <div class="summary">
+                    <b>js / Clone</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>grid를 활용한 사이트입니다.</p>
+                  <div class="summary">
+                    <b>jquery / Grid</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a></li>
+              <li>
+                <a href="#">
+                  <p>swiper을 사용하여 자바스크립트로 fullpage를 구현하였습니다.</p>
+                  <div class="summary">
+                    <b>jquery / 반응형</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>mCustomscroll을 사용하고, 컨텐츠가 가로로 이동하도록 만든 사이트입니다.</p>
+                  <div class="summary"><b>jquery / Cube / Swiper</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>background, transform, swiper을 이용하여 여러 요소가 hover하면 움직이도록 만든 사이트입니다.</p>
+                  <div class="summary">
+                    <b>jquery / Cube / Swiper</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>jquery animate callback으로 만든 사이트입니다.</p>
+                  <div class="summary">
+                    <b>jquery</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a></li>
+              <li><a href="#">
+                  <p>sticky를 이용하여 상품들을 소개 하였습니다.</p>
+                  <div class="summary">
+                    <b>반응형 / sticky</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>pc, tablet, mobile 세가지 반응형으로 만든 사이트입니다.</p>
+                  <div class="summary"><b>반응형</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">
+                  <p>GSAP</p>
+                  <div class="summary">
+                    <b>반응형</b>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex work-list">
+            <div class="flex">
+              <li class="link work01">
+                <div>
+                  <a href="#">
+                    <div class="img-box img01"></div>
+                    <div class="list-title">
+                      <div class="date">
+                        <h3>GENTLE MONSTER</h3>
+                        <p>01/15</p>
+                      </div>
+                      <div class="flex icon">
+                        <img src="./src/assets/computer.png" alt="">
+                      </div>
+                  </a>
+                  </div>
+                  <div class="explanation">
+                    <p class="br">젠틀몬스터의 선글라스 제품을 소개하는 페이지로<br> cube를 활용한 레이아웃입니다.</p>
+                    <div class="summary">
+                      <b>jquery / Cube / Swiper</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work02">
+                <div>
+                  <div class="img-box img02">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>HEINEKEN</h3>
+                      <p>02/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>skew를 활용해 메뉴를 만들고<br> 리디자인한 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work03">
+                <div>
+                  <div class="img-box img03">
+                  </div>
+                  <div class="list-title
+                   flex">
+                    <div class="date">
+                      <h3>MARIO</h3>
+                      <p>03/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>마리오 게임의 특징을 살리며
+                      만든 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work04">
+                <div>
+                  <div class="img-box img04"></div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>APPLE</h3>
+                      <p>04/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>아코디언페이지 구성으로 재해석한 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work05">
+                <div>
+                  <div class="img-box img05">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>ACE BED</h3>
+                      <p>05/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>swiper, jquery, vanilla script로<br> 클론코딩 하였습니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work06">
+                <div>
+                  <div class="img-box img06">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>YES 24</h3>
+                      <p>06/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>swiper, jquery, vanilla script로<br> 클론코딩 하였습니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work07">
+                <div>
+                  <div class="img-box img07">
+
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>LOTTE</h3>
+                      <p>07/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>롯데칠성음료 홈페이지의 일부를 클론 코딩하였습니다. 음료를 클릭하면 그에 대한 정보들이 나옵니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work08">
+                <div>
+                  <div class="img-box img08">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>YG</h3>
+                      <p>08/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>grid를 활용한 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work09">
+                <div>
+                  <div class="img-box img09">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>CHEONGWADAE</h3>
+                      <p>09/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/phone.png" alt="">
+                      <img src="./src/assets/tablet.png" alt="">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>swiper을 사용하여 자바스크립트로 fullpage를 구현하였습니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work10">
+                <div>
+                  <div class="img-box img10">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>GENESIS</h3>
+                      <p>10/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>mCustomscroll을 사용하고, 컨텐츠가 가로로 이동하도록 만든 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work11">
+                <div>
+                  <div class="img-box img11">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>DISNEY</h3>
+                      <p>11/15</p>
+                    </div>
+                    <div class="flex icon">
+                      <img src="./src/assets/computer.png" alt="">
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>background, transform, swiper을 이용하여 여러 요소가 hover하면 움직이도록 만든 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work12">
+                <div>
+                  <div class="img-box img12">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>BANYANTREE</h3>
+                      <p>12/15</p>
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>jquery animate callback으로 만든 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work13">
+                <div>
+                  <div class="img-box img13">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>POLO</h3>
+                      <p>13/15</p>
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>position과 grid를 이용하여 상품들을 소개 하였습니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work14">
+                <div>
+                  <div class="img-box img14">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>CHANEL</h3>
+                      <p>14/15</p>
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>pc, tablet, mobile 세가지 반응형으로 만든 사이트입니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link work15">
+                <div>
+                  <div class="img-box img15">
+                  </div>
+                  <div class="list-title">
+                    <div class="date">
+                      <h3>NEXON</h3>
+                      <p>15/15</p>
+                    </div>
+                  </div>
+                  <div class="explanation">
+                    <p>swiper, jquery, vanilla script로<br> 클론코딩 하였습니다.</p>
+                    <div class="summary"><b>transform</b>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- -------skill--------- -->
+    <section id="about" data-bg="#ffffff">
+      <div class="about-banner">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list flex">
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="inner flex">
+        <div class="me">
+          <div>
+            <img class="pc" src="./src/assets/me.jpg" alt="">
+            <img class="mobile" src="./src/assets/me2.jpg" alt="">
+          </div>
+        </div>
+        <div class="sticky">
+          <div class="desc">
+            <h2>디자인과 기술의 조화를 통해<br> 사용자에게
+              특별한 <span style="font-weight: 500;">빛</span>을 전하는<br> 웹 퍼블리셔가 되겠습니다.</h2>
+            <p>저는 디자인과를 졸업하며 시각적 아름다움을 창조하는 데서 큰 보람을 느꼈습니다.<br>
+              웹이라는 무한한 가능성을 발견하게 되었고, 자연스럽게 웹 퍼블리셔라는 목표를 품게 되었습니다.<br>
+              HTML로 구조를 세우고, CSS로 그 구조에 디자인을 입히며, JavaScript로 상호작용을 더하는 과정은<br>
+              단순한 코딩이 아니라 제 디자인과 아이디어를 실현하는 도구가 되었습니다.<br>
+              제 손끝에서 완성된 작업물이 사용자에게 작지만 특별한 빛이 되길 바랍니다.</p>
+          </div>
+          <div class="name">
+            <p><span>NAME</span><span class="kor">김나연</span></p>
+            <p><span>BIRTH</span><span>2000 . 12 . 07</span></p>
+            <p><span>ADDRESS</span><span class="kor">서울특별시 영등포구</span></p>
+            <p><span>E-MAIL</span><span>kny8664@naver.com</span></p>
+            <div class="skill">
+              <p>SKILL</p>
+              <ul class="flex">
+                <li><img src="./src/assets/htmltLOGO.png" alt=""></li>
+                <li><img src="./src/assets/cssLOGO.png" alt=""></li>
+                <li><img src="./src/assets/jslLOGO.png" alt=""></li>
+                <li><img src="./src/assets/figmaLOGO.png" alt=""></li>
+                <li><img src="./src/assets/photoshopLOGO.png" alt=""></li>
+                <li><img src="./src/assets/illustrateLOGO.png" alt=""></li>
+                <li><img src="./src/assets/githubLOGO.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="word">
+            <ul class="flex">
+              <li class="side">FLEXIBLE</li>
+              <li class="side kor" style="font-weight: bold;">소통</li>
+              <li class="top">REACT</li>
+              <li class="side kor" style="font-weight: bold;">배움</li>
+
+            </ul>
+            <ul class="flex">
+              <li class="bottom">RESPONSIBILITY</li>
+              <li class="side kor">긍정적인</li>
+              <li class="bottom kor">도전적인</li>
+            </ul>
+            <ul class="flex">
+              <li class="top">ENTERPRISING</li>
+              <li class="side">PRONTEND</li>
+              <li class="top kor" style="font-weight: bold;">협력적인</li>
+            </ul>
+            <ul class="flex">
+              <li class="side" style="font-weight: bold;">DEVELOPER</li>
+              <li class="side kor">창의적인</li>
+              <li class="bottom" style="font-weight: bold;">JAVASCRIPT</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="introduce" data-bg="#ffffff">
+      <div class="inner">
+        <div class="contact-title">
+          <h2>Shining like light</h2>
+          <p> 빛처럼 빠른 성장 속도를 보려드리겠습니다.</p>
+          <img src="./src/assets/star.png" alt="" class="star">
+        </div>
+        <div class="contact-endless">
+          <p class="endless">Endless</p>
+          <span class="endless flex">
+            <figure><img src="./src/assets/endlessgif.gif" alt=""></figure>
+            <p>learning</p>
+          </span>
+          <p class="white"> 현재에 안주 하지 않고 끝없이 배워 나가겠습니다.</p>
+        </div>
+        <div class="contact-desc">
+          배움과 책임감을 바탕으로 <span>사용자 중심의 경험</span>을 만들고,
+          기술을 통해 세상에 긍정적인 변화를 가져오는 것을 목표로 합니다.<br>
+          끊임없이 배우고, 협력하며, 책임감을 갖고 한 단계씩<span>성장</span>해 나가겠습니다.
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" role="contentinfo" data-bg="#000000">
+    <div class="inner">
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <p>web publisher</p>
+      </div>
+      <div class="sns">
+        <p>Let's work together </p>
+        <p>Get in touch</p>
+        <span class="instagram"><a href="$">INSTAGRAM</a></span>
+        <span class="email"><a href="$">EMAIL</a></span>
+        <span class="phone"><a href="$">01012345678</a></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js"></script>
+
+  <script type="module" src="./main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+.text-svg {
+  width: 90%;
+  height: auto;
+  background: #ccc;
+  margin: 0 auto;
+}
+
+svg.svg-title {
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+/* path */
+path.svg-logo {
+  fill: inherit;
+  stroke: #e0fffe;
+}
+
+.svg-text {
+  fill: #000000;
+}
+
+/* circle */
+.svg-circle {
+  fill: rgb(180, 255, 254);
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-Eng);
+}
+#intro .inner {
+  width: 90%;
+  z-index: 2;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+#intro .inner .title p:not(:first-child) {
+  color: var(--mainColor100-color);
+}
+
+@media (max-width: 700px) {
+  #intro .inner {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+  }
+  #intro .inner > div {
+    text-align: center;
+  }
+  #intro .inner > div > p {
+    font-size: 5rem;
+  }
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
+    color: var(--mainColor100-color);
+  }
+}
+@media (min-width: 701px) {
+  #intro .inner {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+  }
+  #intro .inner > div {
+    text-align: center;
+  }
+  #intro .inner > div > p {
+    font-size: 6rem;
+  }
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
+    color: var(--mainColor100-color);
+  }
+}
+@media (min-width: 1200px) {
+  #intro {
+    width: 100%;
+  }
+  #intro .inner {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+  }
+  #intro .inner > div {
+    text-align: center;
+  }
+  #intro .inner > div > p {
+    font-size: 10rem;
+  }
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
+    color: var(--mainColor100-color);
+  }
+}

@@ -1,0 +1,47 @@
+:root {
+    --mainEng-font: "Alumni Sans";
+    --mainKor-font: "Nanum Gothic Coding";
+    --mainNum-font: "Orbitron";
+
+    --mainBg-color: #000;
+    --mainColor100-color: #DAFDFF;
+    --mainColor200-color: #bdfcff;
+    --mainColor300-color: #6afffd;
+
+    --subColor100-color: #ababab;
+    --subColor200-color: #ababab;
+    --subColor300-color: #ababab;
+
+    --white: #fff;
+    --black: #000;
+    --black100: #ddd;
+    --black200: #ccc;
+    --black300: #2b2b2b;
+
+    --font-family-Eng: var(--mainEng-font);
+    --font-family-Kor: var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    /* color: var(--mainColor100-color);
+    background-color: var(--black300); */
+}
+
+@media (max-width:800px) {
+    :root {
+        --font-size:14px;
+    }
+}
+
+@media (min-width:801px) {
+    :root {
+        --font-size:14px;
+    }
+}

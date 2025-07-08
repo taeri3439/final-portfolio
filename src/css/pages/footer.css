@@ -1,0 +1,241 @@
+#footer {
+  background-color: var(--black);
+  color: var(--white);
+  height: 70vh;
+  font-family: var(--font-family-Eng);
+}
+#footer .inner {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+#footer .inner .sns {
+  position: absolute;
+}
+#footer .inner .sns span {
+  position: absolute;
+}
+
+@media (max-width: 700px) {
+  #footer {
+    height: 70vh;
+  }
+  #footer .inner {
+    position: relative;
+  }
+  #footer .inner .contact {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    height: 300px;
+  }
+  #footer .inner .contact h2 {
+    font-size: 8rem;
+  }
+  #footer .inner .contact p {
+    font-size: 5rem;
+  }
+  #footer .inner .sns {
+    bottom: 5%;
+    left: 5%;
+  }
+  #footer .inner .sns:hover p {
+    color: var(--mainColor100-color);
+  }
+  #footer .inner .sns p {
+    font-size: 6rem;
+  }
+  #footer .inner .sns span {
+    color: var(--black);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 30px;
+    border: 1px solid var(--black);
+    font-size: 1.3rem;
+    transition: 0.35s;
+  }
+  #footer .inner .sns span.instagram {
+    top: 110px;
+    left: 20px;
+    transform: rotate(5deg);
+  }
+  #footer .inner .sns span.instagram:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-5deg);
+    color: var(--white);
+  }
+  #footer .inner .sns span.email {
+    top: 8px;
+    left: 200px;
+    transform: rotate(9deg);
+  }
+  #footer .inner .sns span.email:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-9deg);
+    color: var(--white);
+    color: var(--white);
+  }
+  #footer .inner .sns span.phone {
+    bottom: -5px;
+    left: 250px;
+    transform: rotate(-5deg);
+  }
+  #footer .inner .sns span.phone:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(5deg);
+    color: var(--white);
+  }
+}
+@media (min-width: 701px) {
+  #footer {
+    height: 70vh;
+  }
+  #footer .inner {
+    position: relative;
+  }
+  #footer .inner .contact {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    height: 300px;
+  }
+  #footer .inner .contact h2 {
+    font-size: 9rem;
+  }
+  #footer .inner .contact p {
+    font-size: 6rem;
+  }
+  #footer .inner .sns {
+    bottom: 5%;
+    left: 5%;
+  }
+  #footer .inner .sns:hover p {
+    color: var(--mainColor100-color);
+  }
+  #footer .inner .sns p {
+    font-size: 7rem;
+  }
+  #footer .inner .sns span {
+    color: var(--black);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 30px;
+    border: 1px solid var(--black);
+    font-size: 1.3rem;
+    transition: 0.35s;
+  }
+  #footer .inner .sns span.instagram {
+    top: 110px;
+    left: 20px;
+    transform: rotate(5deg);
+  }
+  #footer .inner .sns span.instagram:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-5deg);
+    color: var(--white);
+  }
+  #footer .inner .sns span.email {
+    top: 8px;
+    left: 200px;
+    transform: rotate(9deg);
+  }
+  #footer .inner .sns span.email:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-9deg);
+    color: var(--white);
+  }
+  #footer .inner .sns span.phone {
+    bottom: -5px;
+    left: 250px;
+    transform: rotate(-5deg);
+  }
+  #footer .inner .sns span.phone:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(5deg);
+    color: var(--white);
+  }
+}
+@media (min-width: 1100px) {
+  #footer {
+    height: 70vh;
+  }
+  #footer .inner {
+    position: relative;
+  }
+  #footer .inner .contact {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  #footer .inner .contact h2 {
+    font-size: 11rem;
+  }
+  #footer .inner .contact p {
+    font-size: 7rem;
+  }
+  #footer .inner .sns {
+    bottom: 5%;
+    left: 45%;
+  }
+  #footer .inner .sns:hover p {
+    color: var(--mainColor100-color);
+  }
+  #footer .inner .sns p {
+    font-size: 9rem;
+    white-space: nowrap;
+  }
+  #footer .inner .sns span {
+    color: var(--black);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 30px;
+    border: 1px solid var(--black);
+    font-size: 1.3rem;
+    transition: 0.35s;
+  }
+  #footer .inner .sns span.instagram {
+    top: 100px;
+    left: 50px;
+    transform: rotate(5deg);
+  }
+  #footer .inner .sns span.instagram:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-5deg);
+    color: var(--white);
+  }
+  #footer .inner .sns span.email {
+    top: 8px;
+    left: 550px;
+    transform: rotate(9deg);
+  }
+  #footer .inner .sns span.email:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(-9deg);
+    color: var(--white);
+  }
+  #footer .inner .sns span.phone {
+    bottom: -5px;
+    left: 250px;
+    transform: rotate(-5deg);
+  }
+  #footer .inner .sns span.phone:hover {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    transform: rotate(5deg);
+    color: var(--white);
+  }
+}

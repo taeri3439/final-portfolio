@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* setting */
+@import url(./src/css/base/reset.css);
+@import url(./src/css/base/fonts.css);
+@import url(./src/css/base/vars.css);
+
+/* layout */
+@import url(./src/css/pages/header.css);
+@import url(./src/css/pages/intro.css);
+@import url(./src/css/pages/project.css);
+@import url(./src/css/pages/work.css);
+@import url(./src/css/pages/about.css);
+@import url(./src/css/pages/contact.css);
+@import url(./src/css/pages/footer.css);
+
+body {
+    cursor: none;
+    overflow-x: hidden;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    z-index: 999;
+    /* backdrop-filter: blur(.5px); */
+}
+
+.cursor::after {
+    content: 'View';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+}
+
+.link {
+    position: relative;
+    z-index: 99;
+}
+
+/* 
+.link:hover .cursor {
+    transform: translate(-50%, -50%) scale(8);
+    background-color: var( --mainColor100-color);
+} */

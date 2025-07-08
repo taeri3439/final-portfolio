@@ -1,0 +1,775 @@
+body {
+    height: 600vh;
+}
+
+
+#project {
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+
+
+    .inner {
+        .project-title {
+            .project-mn {
+                .text {
+                    font-family: var(--font-family-Eng);
+                }
+
+                .mn {
+                    font-family: var(--font-family-Eng);
+
+                    span {
+                        padding: 0 10px;
+                    }
+
+                    .cursor-box {
+                        border: 1px solid #828282;
+                    }
+                }
+
+                .project-submenu {
+                    width: 100%;
+                    background-color: var(--black);
+
+
+                    a {
+                        display: block;
+                        padding: 0 10px;
+                        cursor: none;
+                    }
+                }
+            }
+
+            .txt {
+                span {
+                    color: var(--mainColor200-color);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .project-slide {
+            .project-inner {
+                .slide-area {
+                    ul {
+                        li {
+                            .img {
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+
+                    .project_slide_l {
+                        .swiper-wrapper {
+
+                            li {
+                                display: flex;
+                                gap: 50px;
+                                opacity: 0 !important;
+                                align-items: center;
+                                pointer-events: all;
+                                transition: .35s;
+
+                                &.on {
+                                    opacity: 1 !important;
+                                    z-index: 99;
+                                }
+
+                                .txt {
+                                    position: relative;
+                                    padding-top: 40px;
+                                    width: 330px;
+                                    text-align: left;
+                                    z-index: 99;
+
+                                    span {
+                                        font-family: var(--font-family-Eng);
+                                    }
+
+                                    >div {
+                                        gap: 8px;
+
+                                        em {
+                                            position: relative;
+
+                                            &:hover::after {
+                                                transform: scale(1);
+                                            }
+
+                                            &::after {
+                                                content: '';
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 1px;
+                                                background-color: var(--white);
+                                                left: 0;
+                                                bottom: 0;
+                                                transform: scale(0);
+                                                transition: .35s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:700px) {
+    #project {
+        height: 100%;
+        padding: 10% 0;
+
+        .inner {
+            width: 100%;
+
+            .project-title {
+                width: 90%;
+                margin: auto;
+                flex-direction: column;
+
+                .project-mn {
+                    display: flex;
+                    align-items: end;
+                    justify-content: space-between;
+
+                    .text {
+                        font-size: 6rem;
+                        line-height: 4.2rem;
+                    }
+
+                    >div {
+                        position: relative;
+                        font-size: 25px;
+                        width: 200px;
+                        border: 1px solid #dfdfdf;
+
+                        >p {
+                            border-bottom: 1px solid #ffffff;
+                            padding: 5px 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            i {
+                                font-size: 13px;
+                                transition: .3s;
+
+                                &.on {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+
+                        .project-submenu {
+                            position: absolute;
+                            display: none;
+
+                            li {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
+                }
+
+                .txt {
+                    width: 90%;
+                    margin-top: 20px;
+                    line-height: 1.5rem;
+                    font-size: 13px;
+                }
+            }
+
+            .project-slide {
+                overflow: hidden;
+                height: 100%;
+                margin-top: 8%;
+
+                .project-inner {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    .slide-area {
+                        position: relative;
+
+                        ul {
+                            li {
+                                .img {
+                                    flex-shrink: 0;
+                                    width: 90%;
+                                    margin: auto;
+                                    height: 450px;
+                                    border: 1px solid var(--mainColor300-color);
+                                    background: no-repeat center;
+                                    background-size: cover;
+                                }
+                                &.slide01{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project1.png);
+                                    }
+                                }
+                                &.slide02{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project2.png);
+                                    }
+                                }
+                                &.slide03{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project3.png);
+                                    }
+                                }
+                                &.slide04{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project4.png);
+                                    }
+                                }
+                            }
+                        }
+
+                        .project_slide_l {
+                            width: 100%;
+                            margin: 0;
+
+                            .swiper-wrapper {
+                                li {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    opacity: 0 !important;
+                                    align-items: flex-start;
+
+                                    &.on {
+                                        opacity: 1 !important;
+                                    }
+
+                                    .txt {
+                                        position: relative;
+                                        margin-left: 5%;
+
+                                        p {
+                                            display: block;
+                                            font-size: 15px;
+                                            line-height: 1.5rem;
+                                            font-weight: 600;
+                                            padding: 10px 0;
+                                        }
+
+                                        b,
+                                        span,
+                                        em {
+                                            display: block;
+                                            padding: 5px;
+                                        }
+
+                                        span {
+                                            font-size: 2.2rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .slide_arrow {
+                                position: absolute;
+                                right: 5%;
+                                bottom: 5%;
+                                z-index: 9;
+
+                                p {
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 30px;
+                                    height: 30px;
+                                    color: #fff;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        color: var(--mainColor200-color);
+                                    }
+
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                .prev {
+                                    transform: rotate(180deg);
+                                }
+                            }
+
+                        }
+
+                        .project_slide_r {
+                            overflow: hidden;
+                            position: absolute;
+                            left: 750px;
+                            top: 0;
+                            width: 1170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:701px) {
+    #project {
+        height: 100vh;
+
+        .inner {
+            .project-title {
+                width: 90%;
+                min-width: 600px;
+                margin: auto;
+                flex-direction: column;
+
+                .project-mn {
+                    display: flex;
+                    align-items: end;
+
+
+                    .text {
+                        font-size: 10rem;
+                        letter-spacing: 1.5rem;
+                        line-height: 7.8rem;
+                    }
+
+                    >div {
+                        position: relative;
+                        font-size: 25px;
+                        width: 200px;
+
+                        >p {
+                            border-bottom: 1px solid #ffffff;
+                            padding: 5px 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            i {
+                                font-size: 13px;
+                                transition: .3s;
+
+                                &.on {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+
+                        .project-submenu {
+                            position: absolute;
+                            display: none;
+
+                            li {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
+                }
+
+                .txt {
+                    width: 80%;
+                    margin-top: 20px;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .project-slide {
+                overflow: hidden;
+                height: 500px;
+                margin-top: 8%;
+
+                .project-inner {
+                    width: 90%;
+                    margin: 0 auto;
+
+
+                    .slide-area {
+                        position: relative;
+
+                        ul {
+                            li {
+                                .img {
+                                    border: 1px solid var(--mainColor300-color);
+                                    background: no-repeat center;
+                                    background-size: cover;
+                                }
+                                &.slide01{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project1.png);
+                                    }
+                                }
+                                &.slide02{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project2.png);
+                                    }
+                                }
+                                &.slide03{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project3.png);
+                                    }
+                                }
+                                &.slide04{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project4.png);
+                                    }
+                                }
+                            }
+                        }
+
+                        .project_slide_l {
+                            flex-shrink: 0;
+                            width: 770px;
+                            margin: 0;
+
+                            .swiper-wrapper {
+                                li {
+                                    display: flex;
+                                    gap: 50px;
+                                    opacity: 0 !important;
+                                    align-items: center;
+                                    pointer-events: all;
+                                    transition: .35s;
+
+
+                                    &.on {
+                                        opacity: 1 !important;
+                                        z-index: 99;
+                                    }
+
+                                    .txt {
+                                        position: relative;
+                                        padding-top: 40px;
+                                        width: 330px;
+                                        text-align: left;
+                                        z-index: 99;
+
+                                        p {
+                                            display: block;
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            font-weight: 600;
+                                            line-height: 1.5rem;
+                                            padding-bottom: 10px;
+                                        }
+
+                                        b,
+                                        span,
+                                        em {
+                                            padding: 3px;
+                                            display: block
+                                        }
+
+                                        span {
+                                            font-size: 3rem;
+                                            padding: 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .slide_arrow {
+                                position: absolute;
+                                left: 400px;
+                                top: 330px;
+                                z-index: 9;
+
+                                p {
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 50px;
+                                    height: 50px;
+                                    color: #fff;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        color: var(--mainColor200-color);
+                                    }
+
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                .prev {
+                                    transform: rotate(180deg);
+                                }
+                            }
+
+                        }
+
+                        .project_slide_r {
+                            overflow: hidden;
+                            position: absolute;
+                            left: 750px;
+                            top: 0;
+                            width: 1170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1100px) {
+    #project {
+        height: 100vh;
+        background-color: var(--black);
+
+        .inner {
+            width: 90%;
+            min-width: 1200px;
+            margin: auto;
+
+            .project-title {
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .project-mn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .text {
+                        font-size: 10rem;
+                        letter-spacing: 1.5rem;
+                    }
+
+                    >div {
+                        position: relative;
+                        font-size: 25px;
+                        width: 200px;
+
+                        >p {
+                            border-bottom: 1px solid #ffffff;
+                            padding: 5px 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            i {
+                                font-size: 13px;
+                                transition: .3s;
+
+                                &.on {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+
+                        .project-submenu {
+                            position: absolute;
+
+                            display: none;
+
+                            li {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
+                }
+
+                .txt {
+                    width: 40%;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .project-slide {
+                overflow: hidden;
+                height: 500px;
+                margin-top: 8%;
+
+                .project-inner {
+                    width: 90%;
+                    min-width: 1260px;
+                    margin: 0 auto;
+
+                    .slide-area {
+                        position: relative;
+
+                        ul {
+                            li {
+                                .img {
+                                    border: 1px solid var(--mainColor300-color);
+                                    background: no-repeat center;
+                                    background-size: cover;
+                                }
+                                &.slide01{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project1.png);
+                                    }
+                                }
+                                &.slide02{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project2.png);
+                                    }
+                                }
+                                &.slide03{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project3.png);
+                                    }
+                                }
+                                &.slide04{
+                                    .img {
+                                        flex-shrink: 0;
+                                        width: 350px;
+                                        height: 450px;
+                                        background-image: url(../../assets/project4.png);
+                                    }
+                                }
+                               
+                            }
+                        }
+
+                        .project_slide_l {
+                            flex-shrink: 0;
+                            width: 770px;
+                            margin: 0;
+
+
+                            .swiper-wrapper {
+                                position: relative;
+
+
+                                &:hover .circle {
+                                    transform: scale(1);
+                                }
+
+
+                                // .circle {
+                                //     position: absolute;
+                                //     width: 255px;
+                                //     height: 255px;
+                                //     background-color: var(--mainColor200-color);
+                                //     border-radius: 50%;
+                                //     left: 370px;
+                                //     top: 30%;
+                                //     transform: scale(0);
+                                //     transition: .4s;
+                                // }
+
+                                li {
+                                    mix-blend-mode: difference;
+
+                                    .txt {
+
+                                        p {
+                                            display: block;
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            font-weight: 600;
+                                            line-height: 1.5rem;
+                                            padding-bottom: 10px;
+                                        }
+
+                                        b,
+                                        span,
+                                        em {
+                                            padding: 3px;
+                                            display: block
+                                        }
+
+                                        span {
+                                            font-size: 3rem;
+                                            padding: 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .slide_arrow {
+                                position: absolute;
+                                left: 400px;
+                                top: 350px;
+                                z-index: 9;
+
+                                p {
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 20px;
+                                    height: 20px;
+                                    color: #ffffff;
+                                    transition: all .3s;
+                                    padding-left: 10px;
+
+                                    &:hover {
+                                        color: var(--mainColor200-color);
+                                    }
+
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                .prev {
+                                    transform: rotate(180deg);
+                                }
+                            }
+
+                        }
+
+                        .project_slide_r {
+                            overflow: hidden;
+                            position: absolute;
+                            left: 750px;
+                            top: 0;
+                            width: 1170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

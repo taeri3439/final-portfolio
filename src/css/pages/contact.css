@@ -1,0 +1,247 @@
+#introduce {
+  background-color: var(--black);
+}
+#introduce .inner {
+  overflow-x: hidden;
+}
+#introduce .inner .contact-title {
+  position: relative;
+}
+#introduce .inner .contact-title h2 {
+  color: var(--mainColor100-color);
+  font-family: var(--font-family-Eng);
+}
+#introduce .inner .contact-title p {
+  color: var(--white);
+}
+#introduce .inner .contact-title .star {
+  filter: blur(20px);
+  position: absolute;
+}
+#introduce .inner .contact-endless .endless {
+  color: var(--mainColor100-color);
+  font-family: var(--font-family-Eng);
+}
+#introduce .inner .contact-endless .white {
+  color: var(--white);
+}
+#introduce .inner .contact-desc {
+  width: 90%;
+  margin: auto;
+  color: var(--white);
+}
+#introduce .inner .contact-desc span {
+  color: var(--black);
+  position: relative;
+  z-index: 99;
+  padding: 0 10px;
+  text-align: center;
+}
+#introduce .inner .contact-desc span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor200-color);
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  #introduce {
+    height: 130vh;
+  }
+  #introduce .inner {
+    height: 100%;
+    position: relative;
+  }
+  #introduce .inner .contact-title {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    width: 90%;
+  }
+  #introduce .inner .contact-title h2 {
+    font-size: 5rem;
+  }
+  #introduce .inner .contact-title p {
+    font-size: 1rem;
+  }
+  #introduce .inner .contact-title .star {
+    width: 400px;
+    top: -150px;
+    right: -250px;
+    z-index: 1;
+  }
+  #introduce .inner .contact-endless {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  #introduce .inner .contact-endless > p {
+    margin-left: 25%;
+  }
+  #introduce .inner .contact-endless .endless {
+    font-size: 5rem;
+  }
+  #introduce .inner .contact-endless .white {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  #introduce .inner .contact-endless span {
+    align-items: center;
+  }
+  #introduce .inner .contact-endless span figure {
+    width: 200px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+  }
+  #introduce .inner .contact-endless span figure img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #introduce .inner .contact-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+    transform: translate(-50%, -50%);
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 701px) {
+  #introduce {
+    height: 130vh;
+  }
+  #introduce .inner {
+    height: 100%;
+    position: relative;
+  }
+  #introduce .inner .contact-title {
+    position: absolute;
+    right: 15%;
+    top: 15%;
+  }
+  #introduce .inner .contact-title h2 {
+    font-size: 7rem;
+  }
+  #introduce .inner .contact-title p {
+    font-size: 1.1rem;
+  }
+  #introduce .inner .contact-title .star {
+    width: 400px;
+    top: -150px;
+    right: -250px;
+    z-index: 1;
+  }
+  #introduce .inner .contact-endless {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  #introduce .inner .contact-endless > p {
+    margin-left: 25%;
+  }
+  #introduce .inner .contact-endless .endless {
+    font-size: 7rem;
+  }
+  #introduce .inner .contact-endless .white {
+    font-size: 1.1rem;
+  }
+  #introduce .inner .contact-endless span {
+    align-items: center;
+  }
+  #introduce .inner .contact-endless span figure {
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  #introduce .inner .contact-endless span figure img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #introduce .inner .contact-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    transform: translate(-50%, -50%);
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  #introduce {
+    height: 130vh;
+  }
+  #introduce .inner {
+    height: 100%;
+    position: relative;
+  }
+  #introduce .inner .contact-title {
+    position: absolute;
+    right: 15%;
+    top: 15%;
+  }
+  #introduce .inner .contact-title h2 {
+    font-size: 11rem;
+    font-weight: 600;
+  }
+  #introduce .inner .contact-title p {
+    font-size: 1.3rem;
+  }
+  #introduce .inner .contact-title .star {
+    width: 400px;
+    top: -150px;
+    right: -250px;
+    z-index: 1;
+  }
+  #introduce .inner .contact-endless {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  #introduce .inner .contact-endless > p {
+    margin-left: 25%;
+  }
+  #introduce .inner .contact-endless .endless {
+    font-size: 11rem;
+    font-weight: 600;
+  }
+  #introduce .inner .contact-endless span {
+    align-items: center;
+  }
+  #introduce .inner .contact-endless span figure {
+    width: 600px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  #introduce .inner .contact-endless span figure img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #introduce .inner .contact-endless .white {
+    font-size: 1.3rem;
+  }
+  #introduce .inner .contact-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.6rem;
+    transform: translate(-50%, -50%);
+    line-height: 2.5rem;
+  }
+}
