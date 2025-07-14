@@ -28,16 +28,16 @@
 ## 📁 폴더 구조
 ```
 final-portfolio/
-├── dist/ # 빌드 결과물
-├── node_modules/ # npm 모듈
-├── public/ # favicon 등 정적 자산
+├── dist/ 
+├── node_modules/ 
+├── public/ 
 ├── src/
 │ ├── assets/
 │ ├── css/
 │ │ ├── base/
 │ │ │ ├── fonts.css
 │ │ │ ├── reset.css
-│ │ │ └── vars.css # 변수 지정 (컬러, 폰트 등)
+│ │ │ └── vars.css # 변수 지정
 │ │ └── pages/
 │ │ ├── about.css
 │ │ ├── contact.css
@@ -60,7 +60,7 @@ final-portfolio/
 │ ├── index.html
 │ ├── main.js # 진입 스크립트
 ├── .gitignore
-├── package.json # 의존성 정보
+├── package.json 
 ├── README.md
 ├── style.css
 └── vite.config.js # Vite 설정
